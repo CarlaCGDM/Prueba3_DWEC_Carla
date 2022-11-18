@@ -24,7 +24,13 @@ function showLeapYears(anyo1,anyo2) {
         return "Debes introducir dos números.";
     }
 
-    //sabiendo que son números, la función sólo debe aceptar números entre 2001 y 2500 (asumimos que inclusive)
+    //sabiendo que son numeros, el primer número debe ser menor que el segundo
+    if (anyo1 > anyo2) {
+        return "El primer número debe ser menor que el segundo."
+    }
+
+
+    //sabiendo que el primero es menor que el segundo la función sólo debe aceptar números entre 2001 y 2500 (asumimos que inclusive)
     let min = Number(anyo1);
     let max = Number(anyo2);
     if (min < 2001 || max > 2500) {
