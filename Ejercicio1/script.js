@@ -27,9 +27,6 @@ function mostrarResultado() {
     //mostrar en el documento
     const P = document.getElementById("resultado");
     P.innerHTML = salida.join("<br>");
-
-
-
 }
 
 //creamos el objeto que almacenara la informacion de cada jugador
